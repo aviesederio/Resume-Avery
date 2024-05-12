@@ -1,89 +1,614 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.11.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.11.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.11.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.11.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.11.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.11.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.11.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.11.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.11.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.11.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+  <title>My Resume</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Avery Justin</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/avviii09" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/avviii_23/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype" target="_blank"></i></a>
+          <a href="https://www.linkedin.com/in/avery-justin-sederio-824bb0257/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  </header><!-- End Header -->
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Avery Justin N. Sederio</h1>
+      <p>I'm a <span class="typed" data-typed-items=" Graduate in Bachelor of Science in Computer Engineering, Experience Visual Graphic Designer, Experience Web Designer"></span></p>
+    </div>
+  </section><!-- End Hero -->
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>
+             I engaged in various roles that contributed to my development. From honing design skills at Informatics Philippines to providing administrative support at the Municipality of Mandaluyong, I gained valuable insights into different sectors. Transitioning to customer service roles at KFC and SM Hyper Market, I refined my interpersonal skills and learned the importance of teamwork. My stint with DOLE-SPES exposed me to management information systems, while my recent internship at ValuCare's IT department broadened my technical capabilities in system development, technical support, and data analysis. Currently pursuing a Bachelor of Science in Computer Engineering at Rizal Technological University, I am driven to continue learning and applying my skills to make meaningful contributions in the field of technology.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Avery Justin N. Sederio</h3>
+            <br>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>9 March 2002</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="https://resume-cf609.web.app/">www.resume.com</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Cellphone:</strong> <span>+639704647875</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Mandaluyong</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor Science</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>averyjustinsederio@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              I am a 22-year-old aspiring professional based in Mandaluyong City, Philippines, with a Bachelor of Science degree in Computer Engineering underway at Rizal Technological University. Born on March 9, 2002, I am driven by a passion for technology and a commitment to continuous learning. You can reach me at +639704647875 or via email at averyjustinsederio@gmail.com and also currently exploring freelance opportunities, I am eager to leverage my skills and contribute to innovative projects with your company.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Skills refer to the abilities, competencies, and knowledge that individuals possess, enabling them to perform tasks, solve problems, and achieve goals effectively. These abilities can be acquired through education, training, and experience.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">Web Designing <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">IT Infrastructure Profiency <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Programming Skills <i class="val">77%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Logic Knowledge <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Database Skills <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">Computer Literate <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Multitasking Ability<i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Photoshop Editing Skills <i class="val">83%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Technicallity Knowledge <i class="val">88%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>Goal-oriented administrative professional with seeking to use my expertise in a growing company. Ready to help executives achieve company goals with ease by handling administrative tasks. Certified, looking to join in company as a part of the team. Hardworking individual with Intermediate Programming, Computer Literate, and Decision-Making.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Avery Justin N. Sederio</h4>
+              <p><em>
+                My professional journey began with skill development in Adobe Photoshop at Informatics Philippines in 2018. Transitioning into practical roles, I gained administrative experience as an OJT Encoder at Mandaluyong's Treasury Department in 2019. I diversified my skill set with roles at KFC, DOLE-SPES, and SM Hyper Market, each contributing to my growth. In 2024, an internship at ValuCare's IT Department allowed me to refine my skills as a System Developer, Technical Support specialist, and Data Analyst, shaping my career for future endeavors in the technology sector.</em></p>
+              <ul>
+                <li>634 FT. Evangelista St. Brgy Pleasant Hills, Mandaluyong City</li>
+                <li>(+63) 9704647875</li>
+                <li>averyjustinsederio@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4> Senior Highschool | TVL-CSS</h4>
+              <h5>2019 - 2020</h5>
+              <p><em>Highway Hills Integrated School, Calbayog St, Mandaluyong, 1550 Metro Manila</em></p>
+              <p>In the advent of K-12 curriculum, Highway Hills Integrated School is now one of the schools which offers Senior High School education in Mandaluyong City. The offers include Academic and Technical-Vocational Tracks such as Accountancy, Business and Management (ABM), Computer System Servicing (CSS), Food and Beverage Services (FBS). With the aim to offer more chances to its students, HHIS on 2018 began catering Science, Technology, Engineering and Mathematics (STEM).</p>
+            </div>
+            <div class="resume-item">
+              <h4>Bachelor of Science in Computer Engineering</h4>
+              <h5>2020 - 2024</h5>
+              <p><em>Rizal Technological University, Boni Ave, Mandaluyong, 1550 Metro Manila</em></p>
+              <p>In this Bachelor of Science in Computer Engineering program, the overarching goals, as outlined by its Program Educational Objectives (PEOs) and Program Outcomes (POs), are to equip graduates with both technical expertise and the adaptive skills necessary for success in the rapidly evolving field of technology. The PEOs emphasize the attainment of technical excellence, continuous learning through self-development, and the cultivation of creative and ethical leadership qualities. </p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Visual Graphic Design</h4>
+              <h5>2016</h5>
+              <p><em>Informatics Computer Institute, Doña Julia Vargas Ave, Ortigas Center, Mandaluyong, Metro Manila</em></p>
+              <p>Informatics Philippines (currently doing business as Informatics College and Informatics Institute) is a multinational corporation that provides Information and Communications Technology training and education established in 1993 in the Philippines.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Works and Experiences</h3>
+            <div class="resume-item">
+              <h4>DOLE-SPES | Management Information System</h4>
+              <h5>2023</h5>
+              <p><em>8F, H2HW+V5C DMG Center, D.M.Guevara St, Mandaluyong, 1550 Metro Manila </em></p>
+              <ul>
+                <li>Work as technical support on the team</li>
+                <li>Assist on the employees that needed for technicalities</li>
+                <li>Trouble shooting and computer related maintenance</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>IT Department | Internship</h4>
+              <h5>2024</h5>
+              <p><em>ValuCare, 33 Meralco Ave, San Antonio, Pasig, 1605 Metro Manila</em></p>
+              <ul>
+                <li>Developed and create a system which is for ValuCare for Tracking System in process deployment</li>
+                <li>Experience the technical support team in trouble shooting and maintenance</li>
+                <li>Part of data analyst team for encoding, and processing backlogs in system</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>A portfolio is a collection of documents, works, or samples that I will showcase my skills, achievements, experiences, and capabilities. It is typically compiled to demonstrate one's qualifications, expertise, and creativity in a specific field or profession. </p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-cert">Certificates</li>
+              <li data-filter=".filter-ach">Achievements</li>
+              <li data-filter=".filter-cp">Projects</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cert">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/cert1.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/cert1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Exporing Robotics and Automation"><i class="bx bx-badge"></i></a>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cert">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/cert2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/cert2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Beyond The Screen: Exploring Laws and Professional Conduct in CpE and IT"><i class="bx bx-badge"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cert">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/cert3.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/cert3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Building The Future: Mobile and Web Development Essentials"><i class="bx bx-badge"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cert">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/cert4.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/cert4.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Cyber Security and Data Privacy"><i class="bx bx-badge"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cert">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/cert5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/cert5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Current and Emerging Trends in Computer Engineering and IT Industry in Computer"><i class="bx bx-badge"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cert">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/cert6.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/cert6.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Exploring Arduino: Your First Step to Mastery"><i class="bx bx-badge"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cert">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/cert7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/cert7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Cloud Computing and Virtualization"><i class="bx bx-badge"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cert">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/cert8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/cert8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Synergizing the Future: Exploring the Interplay of Artificial Intelligence and Machine Learning"><i class="bx bx-badge"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ach">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/ach1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/ach1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Achiever"><i class="bx bx-scatter-chart"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ach">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/ach2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/ach2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Achiever"><i class="bx bx-scatter-chart"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ach">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/ach3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/ach3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Achiever"><i class="bx bx-scatter-chart"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ach">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/ach4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/ach4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Achiever"><i class="bx bx-scatter-chart"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ach">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/ach5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/ach5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Completion"><i class="bx bx-scatter-chart"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ach">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/ach6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/ach6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Completion"><i class="bx bx-scatter-chart"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cp">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/cp1.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/cp1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Location-Oriented Comprehensive Keychain"><i class="bx bx-scatter-chart"></i></a>
+                <a href="capstone.html" title="More Details"><i class="bx bx-detail"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cp">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/cp2.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/cp2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="ValuCare Tracking System"><i class="bx bx-scatter-chart"></i></a>
+                <a href="ojt.html" title="More Details"><i class="bx bx-detail"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <!-- <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-binoculars"></i></div>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-brightness-high"></i></div>
+            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>
+        </div>
+
+      </div>
+    </section>End Services Section -->
+
+    
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>
+            Feel free to reach out to me via email or by phone. I look forward to discussing potential opportunities with you.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>606 Nueve de Febrero, 1550 Kalakhang Maynila, Mandaluyong City</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>averyjustinsederio@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+63 970 4647 875</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d965.3045088624456!2d121.04041766835306!3d14.586648232828484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c831367a3795%3A0x69cd0f095e5fe125!2s606%20Nueve%20de%20Febrero%2C%20Mandaluyong%2C%201550%20Kalakhang%20Maynila!5e0!3m2!1sen!2sph!4v1715430285998!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form class="contact-form" id="formResume">
+              <div class="alert">Your message has successfully sent!</div>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" id="message" required></textarea>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+ <!-- firebase link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+  <script src="firebase.js"></script>
+
+</body>
+
 </html>
